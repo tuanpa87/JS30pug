@@ -67,7 +67,10 @@ gulp.task('scripts', () => {
 		])
 		.pipe($.plumber())
 		.pipe($.if(dev, $.sourcemaps.init()))
-		.pipe($.babel())
+		.pipe($.babel() , {
+			presets: ['@babel/env'],
+			plugins: ['@babel/plugin-proposal-class-properties']
+		})
 		.pipe($.concat('main.js', { newLine: ';\n' }))
 		.pipe(concatUtils.header('(function ($) {\n\n$.cs = {};\n\n'))
 		.pipe(concatUtils.footer('\n\n})(jQuery)'))

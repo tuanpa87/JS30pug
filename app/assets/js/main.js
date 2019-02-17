@@ -51,20 +51,20 @@ person.printGender();
 console.log("=====================");
 
 //*** Classes next gen ES7
-// class Human2 {
-//   gender = 'male2';
-//   printGender = () => console.log(this.gender);
-// }
+class Human2 {
+  gender = 'male2';
+  printGender = () => console.log(this.gender);
+}
 
-// class Person2 extends Human2 {
-//   name = 'Max2';
-//   printMyName = () => console.log(this.name);
-// }
+class Person2 extends Human2 {
+  name = 'Max2';
+  printMyName = () => console.log(this.name);
+}
 
-// const person2 = new Person2();
-// person2.printMyName();
-// person2.printGender
-// console.log("=====================");
+const person2 = new Person2();
+person2.printMyName();
+person2.printGender
+console.log("=====================");
 
 //*** Spread and rest operators
 //Spread
