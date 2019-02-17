@@ -1,0 +1,28 @@
+// Bootstrap overrides
+
+//grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+); //to get value using map-get($grid-breakpoints, "lg")
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-size-base:         0.875rem;
+$line-height-base:       24/14;//1.428571428571429;//1.714285714285714;
+$headings-line-height:   1.233333333333333;
