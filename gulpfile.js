@@ -102,7 +102,7 @@ gulp.task('lint:test', () => {
 });
 
 gulp.task('html', ['views', 'styles', 'modulesStyle' ,'scripts', 'modulesScripts'], () => {
-	return gulp.src(['app/**/*.html', '.tmp/**/*.html'])
+	return gulp.src(['app/**/*.html', '.tmp/**/*.html', '.tmp/**/*.css', '.tmp/**/*.js'])
 	//return gulp.src(['app/*.html', '.tmp/*.html'])
 		.pipe($.useref({ searchPath: ['.tmp', 'app', ,'.'] }))
 		// .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
@@ -247,3 +247,4 @@ gulp.task('default', () => {
 		runSequence(['clean', 'wiredep'], 'build', resolve);
 	});
 });
+
