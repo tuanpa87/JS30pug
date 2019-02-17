@@ -15,7 +15,7 @@ block content
         span.sound #{sounds[index]}
 
   each keyCode, index in keyCodes
-    audio(data-key="#{keyCode}", src="/assets/sounds/" + sounds[index] + ".wav")
+    audio(data-key="#{keyCode}", src="../../../assets/sounds/" + sounds[index] + ".wav")
 
 
   script(type="text/javascript").
